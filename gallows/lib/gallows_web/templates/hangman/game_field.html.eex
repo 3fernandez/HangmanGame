@@ -5,5 +5,5 @@
 </p>
 
 <p>
-  Words so far: <%= @tally.letters |> Enum.join(" ") %>
+  Words so far: <%= letters(@tally.letters) %>
 </p>
