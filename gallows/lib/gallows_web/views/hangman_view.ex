@@ -11,7 +11,7 @@ defmodule GallowsWeb.HangmanView do
     "opacity: 0.1"
   end
 
-  def letters(letters) do
+  def display_letters(letters) do
     letters |> Enum.join(" ")
   end
 
