@@ -1,9 +1,11 @@
 <p>
   Turns left: <%= @tally.turns_left %>
 </p>
-
 <p>
-  Words so far: <%= letters(@tally.letters) %>
+  Tried letters: <%= display_letters(@tally.used_letters) %>
+</p>
+<p>
+  Words so far: <%= display_letters(@tally.letters) %>
 </p>
 
 <%= if game_over?(@tally) do %>
